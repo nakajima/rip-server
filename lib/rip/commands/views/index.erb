@@ -1,0 +1,13 @@
+<html>
+  <head>
+    <title>Rip Server</title>
+  </head>
+  <body>
+    <h1>Rip Packages</h1>
+    <ul>
+      <% $PACKAGES.each do |package| %>
+        <li><a href="/rdoc/<%= package.to_s %>"><%= package.to_s %></a></li>
+      <% end %>
+    </ul>
+  </body>
+</html>
